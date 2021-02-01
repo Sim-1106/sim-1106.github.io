@@ -96,5 +96,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </section>
     </div>
+  <script>
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  </script>
   </body>  
 </html>
