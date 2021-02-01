@@ -5,20 +5,17 @@
     <title>Sim's Blog</title>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
     <link rel = "stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W8GV6R9');</script>
-<!-- End Google Tag Manager -->
-  
-
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8GV6R9');</script>
+    <!-- End Google Tag Manager --> 
   </head>
   <body>
-
-
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v9.0&appId=469879804036335&autoLogAppEvents=1" nonce="unKTrZzc"></script>
     <div id = "header">
         <div>
             <a href="https://sim-1106.github.io/">
@@ -42,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2>I'm Studying...</h2>
           </a>
             <p class="fn-font">현재 martec 테스트를 위한 개인 웹페이지 연습 중</p>
-            <button class="btn-fn-font">작업물 보기</button>
+            <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
         </section>
 
         <section id="content">
@@ -96,10 +93,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </section>
     </div>
-  <script>
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  </script>
+    <script>
+        FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+        });
+    </script>
   </body>  
 </html>
