@@ -104,8 +104,9 @@
     </div>
   <script>
     function resetGtm() {
-      var gtm = window.google_tag_manager['GTM-W8GV6R9'];
-      gtm.dataLayer.reset();
+      window.newDataLayer.push(function(){
+        this.reset();
+      })
     }
   </script>
   </body>  
