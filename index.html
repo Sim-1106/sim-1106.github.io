@@ -96,9 +96,9 @@
         </section>
     </div>
   <script>
-    function resetGtm() {
-      window.newDataLayer.length = 0;
-    }
+    var title = document.querySelector('#header.h1');
+    var location = document.location.href;
+    title.innerText = location;
   </script>
   </body>  
 </html>
