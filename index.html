@@ -96,9 +96,11 @@
         </section>
     </div>
   <script>
-    var title = document.querySelector('#header.h1');
-    var location = document.location.href;
-    title.innerText = location;
+    (function(){
+      var title = document.querySelector('#header.h1');
+      var location = document.location.href;
+      title.innerText = location;
+    })();
   </script>
   </body>  
 </html>
