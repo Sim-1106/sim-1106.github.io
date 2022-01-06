@@ -101,6 +101,24 @@
       var location = document.location.href;
       title.innerText = location;
     })();
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+  event: 'view_item',
+  ecommerce: {
+    items: [{
+      item_name: 'Finnish magical parka',
+      item_id: 'mp1122',
+      price: '31.10',
+      item_brand: 'PARKA4LIFE',
+      item_category: 'Apparel',
+      item_category2: 'Coats',
+      item_category3: 'Parkas',
+      item_category4: 'Unisex',
+      item_variant: 'Navy blue',
+      quantity: '1'
+    }]
+  }
+});
   </script>
   </body>  
 </html>
