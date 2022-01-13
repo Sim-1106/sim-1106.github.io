@@ -96,6 +96,11 @@
         </section>
     </div>
   <script>
+    var tag = document.createElement("div");
+    var text = document.createTextNode(navigator.userAgent);
+    tag.appendChild(text);
+    var body = document.querySelector("#content");
+    body.appendChild(tag);
     (function(){
       var title = document.querySelector('#header h1');
       var location = document.location.href;
