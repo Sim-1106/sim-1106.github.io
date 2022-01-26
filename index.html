@@ -96,6 +96,12 @@
         </section>
     </div>
   <script>
+    
+    window.dataLayer.push({
+      'event' : 'purchase',
+      'ordertype' : '신용카드'
+    })
+    
     var tag = document.createElement("div");
     var text = document.createTextNode(navigator.userAgent);
     tag.appendChild(text);
