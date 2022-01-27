@@ -97,11 +97,6 @@
     </div>
   <script>
     
-    window.dataLayer.push({
-      'event' : 'purchase',
-      'ordertype' : '신용카드'
-    })
-    
     var tag = document.createElement("div");
     var text = document.createTextNode(navigator.userAgent);
     tag.appendChild(text);
@@ -112,130 +107,23 @@
       var location = document.location.href;
       title.innerText = location;
     })();
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-  event: 'view_item',
-  ecommerce: {
-    items: [{
-      item_name: 'Finnish magical parka',
-      item_id: 'mp1122',
-      price: '31.10',
-      item_brand: 'PARKA4LIFE',
-      item_category: 'Apparel',
-      item_category2: 'Coats',
-      item_category3: 'Parkas',
-      item_category4: 'Unisex',
-      item_variant: 'Navy blue',
-      quantity: '1'
-    }]
-  }
-});
     
-    var digitalData = {} || digitalData
-    digitalData = 
-{
-    "userInfo": {
-        "cwid": "00m2mw1YdFDWusrHaauuLa0Tg",
-        "gender": "M",
-        "level": "REGULAR",
-        "birthdate": "80's",
-        "agreeMarketing": "",
-        "memberDt": "",
-        "loginType": "",
-        "rentalYn": "",
-        "rentalUpperCategory": "",
-        "rentalCategory": "",
-        "rentalModelNo": "",
-        "rentalModelNm": "",
-        "city": "",
-        "region": "",
-        "channel": ""
-    },
-    "pageInfo": {
-        "depth1": "코웨이닷컴",
-        "depth2": "코웨이닷컴|주문접수",
-        "depth3": "코웨이닷컴|주문접수",
-        "depth4": "코웨이닷컴|주문접수",
-        "depth5": "코웨이닷컴|주문접수"
-    },
-    "orderInfo": {
-        "orderAction": {
-            "orderId": "1003000303",   // CD39
-            "region": "강동구", // CD43
-            "city": "서울특별시", // CD44
-            "pmtType": "",
-            "bank": "",
-            "safekey": "8133767300011" // CD40
-        },
-        "transactions": [
-            {
-                "actionField": {
-                    "saporderno": "20DZI2200101", // TransactionID
-                    "pmtType": "은행이체", // CD41
-                    "bank": "기업은행"  // CD42
-                },
-                "products": [
-                    {
-                        "category": "정수기/냉온정수기", //Category
-                        "contractId": "렌탈", //CD48
-                        "modelNo": "CP-3140N_SL", //SKU
-                        "modelNm": "신규모델", //Product
-                        "prdCd": "113233", //CD49
-                        "prdNm": "20211029_신규상품", //CD50
-                        "prdNo": 13, //CD51
-                        "variants": "냉정수기_도브화이트_스스로 살균", // variants
-                        "useTp": "자가관리", //CD47
-                        "dutyMonth": "6년", //CD46
-                        "quantity": 1, // Quantity
-                        "basePrice": "35900", // CM3
-                        "dcPrice": 33900, // Revenue
-                        "dcAmt": 2000, // CM4
-                        "freepassfl": "Y", //CD52
-                        "regiPrice": "100000", //CM5
-                        "regiDcPrice": 100000, //CM6
-                        "planDt": "2022-02-07", //CD45
-                        "reRtnYn": "N", //CD53
-                        "ordGift": "N" //CD54
-                    }
-                ]
-            },
-            {
-                "actionField": {
-                    "saporderno": "20DZI2200100",
-                    "pmtType": "신용카드",
-                    "bank": "BC카드"
-                },
-                "products": [
-                    {
-                        "category": "정수기/냉온정수기",
-                        "contractId": "일시불",
-                        "modelNo": "CP-3140N_SL",
-                        "modelNm": "신규모델",
-                        "prdCd": "113233",
-                        "prdNm": "20211029_신규상품",
-                        "prdNo": 13,
-                        "variants": "냉정수기_도브화이트_스스로 살균",
-                        "useTp": "",
-                        "dutyMonth": "",
-                        "quantity": 1,
-                        "basePrice": "1570000",
-                        "dcPrice": 1570000,
-                        "dcAmt": 0,
-                        "freepassfl": "N",
-                        "regiPrice": "0",
-                        "regiDcPrice": "0",
-                        "planDt": "2022-02-07",
-                        "reRtnYn": "N",
-                        "ordGift": "N"
-                    }
-                ]
+    window.dataLayer.push({
+      'event' : 'detail',
+      'digitalData' : {
+          'productInfo' : {
+              'category': '정수기/냉_온_정수기',					
+              'modelNo': 'CP-8200N',					
+              'modelNm': '노블 세로 정수기',					
+              'prdCd': '113334',					
+              'prdNm': '노블 정수기 세로',					
+              'prdNo': '211'	
             }
-        ]
-    }
-}
+        }						
+    })
     
     
     
-  </script>
+
   </body>  
 </html>
