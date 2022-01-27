@@ -108,19 +108,59 @@
       title.innerText = location;
     })();
     
+    
+    
+    var category;
+    var modelNo;
+    var modelNm;
+    var prdCd;
+    var prdNm;
+    var prdNo;
+    
+    function getPrdInfo(){
+    
+      setTimeout(()=> {
+        category = "정수기/냉_온_정수기",
+        modelNo = "CP-8200N",
+        modelNm = "노블 세로 정수기",  
+      }, 5000)
+      
+      setTimeout(()=>{
+        prdCd: '113334',					
+        prdNm: '노블 정수기 세로',					
+        prdNo: '211'	
+      }, 7000)
+    
+      return true;
+    }
+
+    
+    
+    
+    
+    
+    
     window.dataLayer.push({
       'event' : 'detail',
       'digitalData' : {
           'productInfo' : {
-              'category': '정수기/냉_온_정수기',					
-              'modelNo': 'CP-8200N',					
-              'modelNm': '노블 세로 정수기',					
-              'prdCd': '113334',					
-              'prdNm': '노블 정수기 세로',					
-              'prdNo': '211'	
+              'category': category,					
+              'modelNo': modelNo,				
+              'modelNm': modelNm,				
+              'prdCd': prdCd,					
+              'prdNm': prdNm, 			
+              'prdNo': prdNo
             }
         }						
     })
+    
+    
+    
+    
+    
+    
+    
+    
     </script>
     
     
