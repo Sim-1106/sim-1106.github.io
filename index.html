@@ -110,51 +110,24 @@
     
     
     
-    var category;
-    var modelNo;
-    var modelNm;
-    var prdCd;
-    var prdNm;
-    var prdNo;
-    
-    function getPrdInfo(){
-    
-      setTimeout(()=> {
-        category = "정수기/냉_온_정수기",
-        modelNo = "CP-8200N",
-        modelNm = "노블 세로 정수기"  
-      }, 5000)
-      
-      setTimeout(()=>{
-        prdCd = '113334',					
-        prdNm = '노블 정수기 세로',					
-        prdNo = '211'	
-      }, 7000)
-    
-      return true;
-    }
-
-    
-    
-    
-    
-    
-    
-    window.dataLayer.push({
-      'event' : 'detail',
-      'digitalData' : {
-          'productInfo' : {
-              'category': category,					
-              'modelNo': modelNo,				
-              'modelNm': modelNm,				
-              'prdCd': prdCd,					
-              'prdNm': prdNm, 			
-              'prdNo': prdNo
-            }
-        }						
-    })
-    
-    
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'view_item',
+  ecommerce: {
+    items: [{
+      item_name: 'Finnish magical parka',
+      item_id: 'mp1122',
+      price: '31.10',
+      item_brand: 'PARKA4LIFE',
+      item_category: 'Apparel',
+      item_category2: 'Coats',
+      item_category3: 'Parkas',
+      item_category4: 'Unisex',
+      item_variant: 'Navy blue',
+      quantity: '1'
+    }]
+  }
+});
     
     
     
