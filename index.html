@@ -25,6 +25,8 @@
   </head>
   <body>
     <h1 id="test">TEST</h1>
+    <h2 id="test2"></h2>
+    
   <script>
     
     function getCookie(name) {
@@ -39,7 +41,11 @@
     }
     
     // 쿠키 값으로 텍스트 변경
-    document.querySelector("#test").innerText = getCookie("_ga")
+    document.querySelector("#test").innerText = getCookie("_ga");
+    
+    //App_Instance_ID 가 네이티브에서 제대로 넘어오는지 확인
+    document.querySelector("#test2").innerText = getCookie("app_instance_id");
+    
 
     function logEvent(name, params) {
       if (!name) {
