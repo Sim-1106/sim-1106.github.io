@@ -32,6 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h1 id="test">TEST</h1>
     <h2 id="test2"></h2>
     <button id="login">로그인</button>
+    <button id="after">로그인 이후</button>
     
   <script>
               
@@ -113,7 +114,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     })
     
     document.querySelector("#login").addEventListener("click", function(){
+      logEvent("login", {login_test:"false"})
       setUserProperty("login_id", "20220704");
+    })
+    
+    document.querySelector("#after").addEventLitener("click", function(){
+      logEvent("after", {login_test:"true"})
     })
   </script>
   </body>  
