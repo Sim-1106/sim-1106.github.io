@@ -111,6 +111,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       console.log("event1")
       logEvent("event1", {foo:"bar"})
     })
+    
+    document.querySelector("#login").addEventListener("click", function(){
+      setUserProperty("login_id", "20220704");
+    })
   </script>
   </body>  
 </html>
