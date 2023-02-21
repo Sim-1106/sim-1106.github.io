@@ -34,8 +34,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <button id="login">로그인</button>
     <button id="after">로그인 이후</button>
     
+    <div>
+      <h2 class="ua"></h2>
+    </div>
+    
   <script>
               
+    var ua = navigator.userAgent;
+    document.querySelector(".ua").innerText = ua;
     
     function getCookie(name) {
       var nameEQ = name + "=";
