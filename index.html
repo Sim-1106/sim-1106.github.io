@@ -61,8 +61,15 @@
 
     <script>
         var btn = document.querySelector('.share');
+
+        
+
         btn.addEventListener('click', function(e){
-            gtag('event', 'engagement_1')
+            gtag('set', 'user_id', 'test_20230526');
+            gtag('event', 'engagement_1');
+            gtag('set', 'user_properties', {
+                'login_id' : "sqwe3416"
+            });
         })
     </script>
 
