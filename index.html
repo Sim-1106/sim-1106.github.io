@@ -7,9 +7,7 @@
     <title>SSB | Home</title>
     <link rel="stylesheet" type= "text/css" href="/style.css">
     <meta name="google-site-verification" content="ifUFYBcWOiL2kPof8HMxYfskF8mY3JKoqC7TRwFdO9w" />
-    <!--
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0ec5769f-6e53-4c69-9046-e5d7b11e7ea1" data-blockingmode="auto" type="text/javascript"></script>
-    -->
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -63,35 +61,6 @@
         </div>
       </div>
     </div>
-<script id="gtm-no_activity_4sec">
-  (function(){
-    var timeout;
-    var flag = false;
-    var defaultTime = 4000; // 배너가 노출될 시간 설정
-    
-    function resetTimer(event) {
-      clearTimeout(timeout);
-      timeout = setTimeout(function () {
-        if ( !flag ) {
-          //window.dataLayer.push({ event: "no_activity_4sec" });
-          document.querySelector('h1').innerText = event.type;
-          flag = true;
-        }
-      }, defaultTime);
-    }
-    
-    if ( !flag ) {
-      document.addEventListener("mousemove", resetTimer);
-      document.addEventListener("keydown", resetTimer);
-      document.addEventListener("scroll", resetTimer);
-      document.addEventListener("click", resetTimer);
-      document.addEventListener("touchstart", resetTimer);  // 터치 시작
-      document.addEventListener("touchmove", resetTimer);   // 터치 이동
-      document.addEventListener("touchend", resetTimer);    // 터치 끝
-      // Initialize the timer
-      resetTimer();
-    }
-  })();
-</script>
+
 </body>
 </html>
