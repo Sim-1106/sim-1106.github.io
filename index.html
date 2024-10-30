@@ -61,6 +61,16 @@
         </div>
       </div>
     </div>
+    <script>
+        if (window.top !== window.self ) {
+            window.top.postMessage(
+                JSON.stringify({
+                    event:'iframe_event'
+                }),
+                'http://127.0.0.1:5500'
+                );
+        }
+    </script>
 
 </body>
 </html>
