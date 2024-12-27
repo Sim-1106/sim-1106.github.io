@@ -37,6 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h1>VWO 테스트</h1>
     <div>
         <a href="https://www.seongbong.com/">A링크로 이동</a>
+        <button id="cross-domain">버튼으로 이동</button>
     </div>
     <div>
         <h2 class="user-agent"></h2>
@@ -80,7 +81,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
     <script>
-        
+        var crossBtn = document.querySelector('#cross-domain');
+        crossBtn.addEventListener('click', ()=>{
+            window.location.href = 'https://www.seongbong.com/'
+        });
     </script>
     <script>
         // iframe 환경에서 parentFrame으로 데이터를 전달하는 방법 예시
