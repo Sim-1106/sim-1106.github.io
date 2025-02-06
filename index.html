@@ -9,7 +9,18 @@
     <meta name="google-site-verification" content="ifUFYBcWOiL2kPof8HMxYfskF8mY3JKoqC7TRwFdO9w" />
     <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/5f958acd8d85fa1808445e93c386a78f.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
-    <script src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-E3733EJHHL', {
+        'client_id': getClientIdFromUrl(),
+        'session_id': getSessionIdFromUrl()
+      });
+    
+    </script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
