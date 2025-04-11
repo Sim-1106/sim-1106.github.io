@@ -9,16 +9,28 @@
     <meta name="google-site-verification" content="ifUFYBcWOiL2kPof8HMxYfskF8mY3JKoqC7TRwFdO9w" />
     <script src="https://apis.google.com/js/api.js"></script>
 
-
-    
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NT59TWVQ');</script>
-    <!-- End Google Tag Manager -->
+    End Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7N012ZMNBN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('set', 'linker', {
+        'domains': ['sim-1106.github.io'],
+        'decorate_forms':true,
+        'accept_incoming':true
+    });
+
+    gtag('config', 'G-7N012ZMNBN');
+    </script>
+    
 </head>
 <body>
     <h1>VWO 테스트</h1>
@@ -67,7 +79,7 @@
         </div>
       </div>
     </div>
-    <script>
+    <!-- <script>
         var crossBtn = document.querySelector('#cross-domain');
         crossBtn.addEventListener('click', ()=>{
             window.location.href = 'https://www.seongbong.com/'
@@ -83,7 +95,7 @@
                 'http://127.0.0.1:5500'
                 );
         }
-    </script>
+    </script> -->
 <footer>
     <!-- <a href="?cmpscreen" class="cmpfooterlink cmpfooterlinkcmp">Privacy settings</a> -->
 </footer>
